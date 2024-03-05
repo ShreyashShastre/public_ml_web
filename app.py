@@ -76,7 +76,7 @@ if selected == 'Diabetes Prediction':
         user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
                       BMI, DiabetesPedigreeFunction, Age]
 
-        user_input = [float(x) for x in user_input]
+        user_input = [float(x) for x in user_input if x.strip()]
 
         diab_prediction = diabetes_model.predict([user_input])
 
