@@ -88,8 +88,6 @@ if selected == 'Diabetes Prediction':
     st.success(diab_diagnosis)
 
 
-st.text("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
-
 
 if selected == 'Heart Disease Prediction':
 
@@ -156,7 +154,6 @@ if selected == 'Heart Disease Prediction':
             heart_diagnosis = 'The person does not have any heart disease'
 
     st.success(heart_diagnosis)
-st.text("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
 
 
 # Parkinson's Prediction Page
