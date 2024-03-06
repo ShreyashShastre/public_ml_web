@@ -88,8 +88,9 @@ if selected == 'Diabetes Prediction':
     st.success(diab_diagnosis)
 
 
-st.text.color_picker("Pick a color", "#00FF00")
-("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+st.text("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+selected_color = st.color_picker("Pick a color", "#00FF00")
+st.write("You selected:", selected_color)
 
 if selected == 'Heart Disease Prediction':
 
