@@ -87,7 +87,7 @@ if selected == 'Diabetes Prediction':
 
     st.success(diab_diagnosis)
 
-st.components.v1.html(toast_script)
+
 st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
 
 if selected == 'Heart Disease Prediction':
