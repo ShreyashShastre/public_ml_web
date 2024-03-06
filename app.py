@@ -87,10 +87,10 @@ if selected == 'Diabetes Prediction':
             diab_diagnosis = 'The person is not diabetic'
 
     st.success(diab_diagnosis)
-  def show_toast(title, message):
+def show_toast(title, message):
     toaster = ToastNotifier()
     toaster.show_toast(title, message, duration=10)
-  show_toast("Notification", "Hello, this is a toast message!")
+show_toast("Notification", "Hello, this is a toast message!")
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
