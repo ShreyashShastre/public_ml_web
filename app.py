@@ -87,19 +87,8 @@ if selected == 'Diabetes Prediction':
 
     st.success(diab_diagnosis)
 
-toast_script = """
-<script>
-function showToast(message) {
-    alert(message);
-}
-</script>
-"""
-
-# Display the JavaScript code in the Streamlit app
 st.components.v1.html(toast_script)
-
-# Example usage
-st.button("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
 
 if selected == 'Heart Disease Prediction':
 
@@ -166,6 +155,8 @@ if selected == 'Heart Disease Prediction':
             heart_diagnosis = 'The person does not have any heart disease'
 
     st.success(heart_diagnosis)
+st.components.v1.html(toast_script)
+st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
 
 # Parkinson's Prediction Page
 if selected == "Parkinsons Prediction":
@@ -261,3 +252,5 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+st.components.v1.html(toast_script)
+st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
