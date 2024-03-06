@@ -156,8 +156,8 @@ if selected == 'Heart Disease Prediction':
             heart_diagnosis = 'The person does not have any heart disease'
 
     st.success(heart_diagnosis)
-st.components.v1.html(toast_script)
-st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+st.text("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+
 
 # Parkinson's Prediction Page
 if selected == "Parkinsons Prediction":
@@ -253,5 +253,5 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
-st.components.v1.html(toast_script)
-st.text_input("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+st.text("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
+
