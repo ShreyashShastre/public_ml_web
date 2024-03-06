@@ -2,6 +2,7 @@ import os
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
+from win10toast import ToastNotifier
 
 # Set page configuration
 st.set_page_config(page_title="Health Assistant",
@@ -86,6 +87,10 @@ if selected == 'Diabetes Prediction':
             diab_diagnosis = 'The person is not diabetic'
 
     st.success(diab_diagnosis)
+  def show_toast(title, message):
+    toaster = ToastNotifier()
+    toaster.show_toast(title, message, duration=10)
+    show_toast("Notification", "Hello, this is a toast message!")
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
