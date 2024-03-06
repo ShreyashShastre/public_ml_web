@@ -87,12 +87,23 @@ if selected == 'Diabetes Prediction':
             diab_diagnosis = 'The person is not diabetic'
 
     st.success(diab_diagnosis)
-def show_toast(title, message):
-    toaster = ToastNotifier()
-    toaster.show_toast(title, message, duration=10)
-show_toast("Notification", "Hello, this is a toast message!")
 
-# Heart Disease Prediction Page
+toast_script = """
+<script>
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.cssText = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 10px 20px; border-radius: 5px; z-index: 9999;';
+    document.body.appendChild(toast);
+    setTimeout(function() {
+        toast.remove();
+    }, 3000);
+}
+</script>
+"""
+st.components.v1.html(toast_script)
+st.button("Show Toast", on_click="showToast('This is a toast notification!')")
+
 if selected == 'Heart Disease Prediction':
 
     # page title
