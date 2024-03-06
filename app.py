@@ -99,7 +99,7 @@ function showToast(message) {
 st.components.v1.html(toast_script)
 
 # Example usage
-st.button("Show Toast", on_click="showToast('This is a toast notification!')")
+st.button("Showed prediction is for patient preference.for more precautionary step is check up by doctor.")
 
 if selected == 'Heart Disease Prediction':
 
