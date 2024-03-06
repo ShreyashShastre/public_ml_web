@@ -90,17 +90,15 @@ if selected == 'Diabetes Prediction':
 toast_script = """
 <script>
 function showToast(message) {
-    const toast = document.createElement('div');
-    toast.textContent = message;
-    toast.style.cssText = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 10px 20px; border-radius: 5px; z-index: 9999;';
-    document.body.appendChild(toast);
-    setTimeout(function() {
-        toast.remove();
-    }, 3000);
+    alert(message);
 }
 </script>
 """
+
+# Display the JavaScript code in the Streamlit app
 st.components.v1.html(toast_script)
+
+# Example usage
 st.button("Show Toast", on_click="showToast('This is a toast notification!')")
 
 if selected == 'Heart Disease Prediction':
